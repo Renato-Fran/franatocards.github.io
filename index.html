@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franato Cards | Design e Impressão para Profissionais Liberais</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe600;
+    }
+
+    section {
+      padding: 100px 10%;
+      text-align: center;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #ffe600;
+      color: #000;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+
+    .servicos {
+      background: #fff;
+      color: #000;
+      border-radius: 50px 50px 0 0;
+      margin-top: -60px;
+    }
+
+    .servicos h2 {
+      color: #0072ff;
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #f1f1f1;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #0072ff;
+      margin-bottom: 10px;
+    }
+
+    .sobre {
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+    }
+
+    .sobre p {
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background: #003366;
+      padding: 40px 10%;
+      color: #fff;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffe600;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+      nav a {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Franato Cards</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Impressos que comunicam confiança e profissionalismo</h2>
+    <p>Design e impressão sob medida para médicos, dentistas, advogados, terapeutas e outros profissionais liberais.</p>
+    <a class="cta" href="https://wa.me/5599999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20com%20a%20Franato%20Cards." target="_blank">
+      💬 Fazer orçamento pelo WhatsApp
+    </a>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Cartões de Visita</h3>
+        <p>Crie uma primeira impressão memorável com nossos cartões personalizados.</p>
+      </div>
+      <div class="card">
+        <h3>Folders e Panfletos</h3>
+        <p>Divulgue seus serviços com materiais que valorizam a sua marca.</p>
+      </div>
+      <div class="card">
+        <h3>Tags e Adesivos</h3>
+        <p>Detalhes que reforçam o cuidado e a identidade da sua marca.</p>
+      </div>
+      <div class="card">
+        <h3>Design Personalizado</h3>
+        <p>Layout exclusivo para transmitir profissionalismo e credibilidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Na Franato Cards, acreditamos que cada profissional merece um material à altura do seu nome.  
+    Nosso trabalho une design, qualidade e propósito — ajudando profissionais liberais de todo o Brasil a destacarem sua marca no impresso e no digital.</p>
+  </section>
+
+  <footer id="contato">
+    <p>📦 Entregamos em todo o Brasil</p>
+    <p>💬 <a href="https://wa.me/5599999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento!" target="_blank">Fale conosco pelo WhatsApp</a></p>
+    <p>© 2025 Franato Cards - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Rolagem suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+``
